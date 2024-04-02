@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Megamole Nig Limited</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Megamole Nig Limited</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="Videos/arial.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Innovating Agriculture</h2>
+        <h3>One Crop at a Time</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut ipsa
+          explicabo neque dolores eos ex ducimus? Similique blanditiis porro
+          velit?
+        </p>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"><img src="/images/facebook-circle-fill.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/images/twitter-x-fill.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/images/instagram-fill.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/images/linkedin-box-fill.png" alt="" /></a>
+        </li>
+        
+       
+      </ul>
+    </section>
+    <section style="height: 1800px; width: 100%; background-color: #fff;"><p>hellllooooo</p></section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products/Services</a></li>
+        <li><a href="#">Blogs/Articles</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+<script>
+  const menuToggle = document.querySelector('.toggle')
+  const showcase = document.querySelector('.showcase')
+
+  menuToggle.addEventListener('click',() => {
+    menuToggle.classList.toggle('active')
+    showcase.classList.toggle('active')
+  })
+</script>
+
+  </body>
+</html>
