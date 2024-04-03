@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-:root{
-    --overlay-color: #343340;
+:root {
+  --overlay-color: #343340;
 }
 
 * {
@@ -26,7 +26,7 @@
   transition: 0.5s;
 }
 .showcase.active {
-    right: 300px;
+  right: 300px;
 }
 
 .showcase header {
@@ -152,43 +152,43 @@
   transform: scale(1) translateY(-15px);
 }
 
-.menu{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu ul {
-    position: relative;
-    list-style: none;
+  position: relative;
+  list-style: none;
 }
 
-.menu ul li a{
-   text-decoration: none;
-   font-size: 24px;
-   color: #111;
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
 }
 
-.menu ul li a:hover{
-    color: var(--overlay-color);
+.menu ul li a:hover {
+  color: var(--overlay-color);
 }
 
 @media (max-width: 798px) {
-    .showcase,
-    .showcase header{
-        padding: 40px;
-    }
-    .text h2 {
-        font-size: 3em;
-    }
-    .text h3 {
-        font-size: 2em;
-    }
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
 }
 
 body {
@@ -212,7 +212,7 @@ body {
   position: relative;
 }
 
-.heading h1::after{
+.heading h1::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -224,7 +224,7 @@ body {
 
 .heading p {
   font-size: 18px;
-  color: #666;
+  color: #222;
   margin-bottom: 35px;
 }
 
@@ -234,7 +234,7 @@ body {
   padding: 10px 20px;
 }
 
-.about{
+.about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,7 +248,7 @@ body {
 }
 
 .about-image img {
-  max-width:100%;
+  max-width: 100%;
   height: 650px;
   display: block;
   transition: 0.5s ease;
@@ -258,7 +258,7 @@ body {
   transform: scale(1.2);
 }
 
-.about-content{
+.about-content {
   flex: 1;
 }
 
@@ -268,13 +268,13 @@ body {
   color: #333;
 }
 
-.about-content p{
+.about-content p {
   font-size: 18px;
   line-height: 1.5;
-  color: #666;
+  color: #222;
 }
 
-.about-content .read-more{
+.about-content .read-more {
   display: inline-block;
   padding: 10px 20px;
   background-color: #4caf50;
@@ -286,37 +286,122 @@ body {
   transition: 0.3s ease;
 }
 
-.about-content .read-more:hover{
+.about-content .read-more:hover {
   background-color: #3e8e41;
 }
 
-@media screen and (max-width: 768px){
-  .heading{
+@media screen and (max-width: 768px) {
+  .heading {
     padding: 0px 20px;
   }
-  .heading h1{
+  .heading h1 {
     font-size: 36px;
   }
-  .heading p{
+  .heading p {
     font-size: 17px;
     margin-bottom: 0px;
   }
-  .container{
+  .container {
     padding: 0px;
   }
-  .about{
+  .about {
     padding: 20px;
     flex-direction: column;
   }
-  .about-image{
+  .about-image {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  .about-content p{
-   padding: 0px;
-   font-size: 16px;
-  }
-  .about-content .read-more{
+  .about-content p {
+    padding: 0px;
     font-size: 16px;
   }
+  .about-content .read-more {
+    font-size: 16px;
+  }
+  .services-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 85%;
+    display: flex;
+    margin: 20px 0px;
+  }
 }
+
+.title h1 {
+  font-size: 50px;
+  color: #000;
+ text-align: center;
+ margin-top: -720px;
+}
+
+.title p{
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.services-section{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card:hover{
+  background-color: #f3f3f3;
+  transition: 0.5s ease;
+}
+
+.card .icon{
+  font-size: 45px;
+  margin-bottom: 25px;
+  color: #4caf50;
+}
+
+.card h2{
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.card p{
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.button{
+  font-size: 17px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf50;
+  padding:11px 15px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.button:hover{
+  background-color: #3e8e41;
+  transition: 0.3s ease;
+}
+
+
+
