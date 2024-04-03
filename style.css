@@ -334,7 +334,7 @@ body {
   font-size: 50px;
   color: #000;
  text-align: center;
- margin-top: -720px;
+ margin-top: 50px;
 }
 
 .title p{
@@ -365,7 +365,7 @@ body {
 }
 
 .card:hover{
-  background-color: #f3f3f3;
+  background-color: #918fb3;
   transition: 0.5s ease;
 }
 
@@ -402,6 +402,7 @@ body {
   background-color: #3e8e41;
   transition: 0.3s ease;
 }
+
 
 
 
