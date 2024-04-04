@@ -319,38 +319,37 @@ body {
   .about-content .read-more {
     font-size: 16px;
   }
-  .services-section{
+  .services-section {
     display: flex;
     flex-direction: column;
   }
-  .card{
+  .card {
     width: 85%;
     display: flex;
     margin: 20px 0px;
   }
 
-  .col{
+  .col {
     flex: 100%;
     max-width: 100%;
   }
-
 }
 
 .title h1 {
   font-size: 50px;
   color: #000;
- text-align: center;
- margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
-.title p{
+.title p {
   font-size: 20px;
   color: #666;
   text-align: center;
   margin-top: 10px;
 }
 
-.services-section{
+.services-section {
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -359,7 +358,7 @@ body {
   text-align: center;
 }
 
-.card{
+.card {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -370,41 +369,41 @@ body {
   border-radius: 10px;
 }
 
-.card:hover{
+.card:hover {
   background-color: #918fb3;
   transition: 0.5s ease;
 }
 
-.card .icon{
+.card .icon {
   font-size: 45px;
   margin-bottom: 25px;
   color: #4caf50;
 }
 
-.card h2{
+.card h2 {
   font-size: 22px;
   color: #222;
   margin-bottom: 20px;
 }
 
-.card p{
+.card p {
   font-size: 16px;
   margin-bottom: 30px;
   line-height: 1.5;
   color: #222;
 }
 
-.button{
+.button {
   font-size: 17px;
   text-decoration: none;
   color: #fff;
   background-color: #4caf50;
-  padding:11px 15px;
+  padding: 11px 15px;
   border-radius: 5px;
   margin-bottom: 6px;
 }
 
-.button:hover{
+.button:hover {
   background-color: #3e8e41;
   transition: 0.3s ease;
 }
@@ -416,53 +415,119 @@ body {
   text-align: center;
 }
 
-.inner{
+.inner {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
 }
 
-.border{
+.border {
   width: 200px;
   height: 5px;
   background: #6ab04c;
   margin: 4px auto;
 }
 
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.col{
+.col {
   flex: 33.33%;
   max-width: 33.33%;
   box-sizing: border-box;
   padding: 15px;
 }
 
-.testimonial{
+.testimonial {
   background: #fff;
   padding: 30px;
 }
 
-.testimonial img{
+.testimonial img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
-.name{
+.name {
   font-size: 20px;
   text-transform: uppercase;
   margin: 20px 0;
 }
 
-.stars{
+.stars {
   color: #6ab04c;
   margin-bottom: 20px;
+}
+
+.blue {
+  padding-top: 100px;
+}
+
+.partner {
+  text-align: center;
+  padding: 20px;
+}
+
+.partner-footer{
+  text-align: center;
+}
+
+.slide img{
+  height: 90px;
+  /* object-fit: contain; */
+}
+
+.slick-slide{
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide img{
+  display: block;
+}
+
+.slick-initialized .slick-slide{
+  display: block;
+}
+
+.copy{
+  padding-top: 250px;
 }
 
 

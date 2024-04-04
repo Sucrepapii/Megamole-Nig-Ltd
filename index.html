@@ -8,7 +8,13 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <title>Megamole Nig Limited</title>
   </head>
   <body>
@@ -130,7 +136,7 @@
         <div class="row">
           <div class="col">
             <div class="testimonial">
-              <img src="/images/guinness-harp-device-01.jpg" alt="" />
+              <img src="/images/man1.jpg" alt="" />
               <div class="name">Full name</div>
               <div class="stars">
                 <i class="ri-star-fill"></i>
@@ -149,7 +155,7 @@
 
           <div class="col">
             <div class="testimonial">
-              <img src="/images/frutta.jpeg" alt="" />
+              <img src="/images/man2.jpg" alt="" />
               <div class="name">Full name</div>
               <div class="stars">
                 <i class="ri-star-fill"></i>
@@ -168,7 +174,7 @@
 
           <div class="col">
             <div class="testimonial">
-              <img src="/images/oxford-int-group-logo.jpg" alt="" />
+              <img src="/images/man3.jpg" alt="" />
               <div class="name">Full name</div>
               <div class="stars">
                 <i class="ri-star-fill"></i>
@@ -188,6 +194,21 @@
       </div>
     </div>
 
+    <div class="container blue">
+      <h2 class="partner">Our Partners</h2>
+      <section class="customer-logos slider">
+        <div class="slide"><img src="/images/frutta.jpeg" alt="" /></div>
+        <div class="slide"><img src="/images/guinness1.png" alt="" /></div>
+        <div class="slide">
+          <img src="/images/oxford-int-group-logo.jpg" alt="" />
+        </div>
+        <div class="slide"><img src="/images/son1.jpeg" alt="" /></div>
+        <div class="slide"><img src="/images/Vegetable 1.jpg" alt="" /></div>
+      </section>
+    </div>
+
+    <p class="partner-footer">All Rights Reserved &copy; Megamole</p>
+
     <div class="menu">
       <ul>
         <li><a href="#">Home</a></li>
@@ -205,6 +226,32 @@
       menuToggle.addEventListener("click", () => {
         menuToggle.classList.toggle("active");
         showcase.classList.toggle("active");
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover:false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+              }
+            }]
+        });
       });
     </script>
   </body>
