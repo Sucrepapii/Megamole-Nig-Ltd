@@ -369,6 +369,10 @@ body {
   text-align: center;
 }
 
+.wrapper p{
+  padding: 40px;
+}
+
 .card {
   width: 100%;
   display: flex;
