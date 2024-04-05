@@ -210,17 +210,17 @@
     <div class="container red">
       <form>
         <h1>Contact Us</h1>
-        <input type="text" id="firstName" placeholder="First Name" required>
-        <input type="text" id="lastName" placeholder="Last Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="mobile" placeholder="Mobile Number" required>
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="mobile" placeholder="Mobile Number" required />
         <h4>Type your message here...</h4>
         <textarea required></textarea>
-        <input type="submit" value="Send" id="button">
+        <input type="submit" value="Send" id="button" />
       </form>
     </div>
 
-    <p class="partner-footer">All Rights Reserved &copy; Megamole</p>
+
 
     <div class="menu">
       <ul>
@@ -242,15 +242,15 @@
       });
     </script>
     <script>
-      $(document).ready(function(){
-        $('.customer-logos').slick({
+      $(document).ready(function () {
+        $(".customer-logos").slick({
           slidesToShow: 6,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 1500,
           arrows: false,
           dots: false,
-          pauseOnHover:false,
+          pauseOnHover: false,
           responsive: [
             {
               breakpoint: 768,
@@ -262,10 +262,58 @@
               breakpoint: 480,
               settings: {
                 slidesToShow: 3,
-              }
-            }]
+              },
+            },
+          ],
         });
       });
     </script>
+
+    <footer>
+      <div class="row up">
+        <div class="col down">
+          <img src="#" class="nill">
+          <p>Megamole is a an agricultural and Technical Services company.  
+          </p>
+        </div>
+        <div class="col down">
+          <h3>Office <div class="underline"><span></span></div></h3>
+          <p>305B, ABISOGUN LEIGH STREET,</p>
+          <p> ADENIJI ESTATE, OGBA G.R.A,</p>
+          <p> LAGOS STATE, NIGERIA</p>
+          <p class="email-id"> xxx@gmail.com</p>
+          <h4>+2349012345678</h4>
+        </div>
+        <div class="col down">
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul class="low">
+            <li class="high"><a href="#">Home</a></li>
+            <li class="high"><a href="#">About Us</a></li>
+            <li class="high"><a href="#">Products/Services</a></li>
+            <li class="high"><a href="#">Testimonials</a></li>
+            <li class="high"><a href="#">Our partners</a></li>
+            <li class="high"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col down">
+          <h3>Newsletter <div class="underline"><span></span></div></h3>
+          <form class="pot">
+            <i class="ri-mail-fill"></i>
+            <input type="email" placeholder="Enter your email id" required>
+            <button type="submit"><i class="ri-arrow-right-fill"></i></button>
+          </form>
+          <div class="social-icons">
+            <i class="ri-facebook-box-fill socialmedia"></i>
+            <i class="ri-twitter-x-fill socialmedia"></i>
+            <i class="ri-whatsapp-fill socialmedia"></i>
+            <i class="ri-linkedin-box-fill socialmedia"></i>
+            <i class="ri-instagram-fill socialmedia"></i>
+          </div>
+        </div>
+      </div>
+      <hr>
+       <p class="partner-footer">Megamole &copy; 2016 - All Rights Reserved </p>
+    </footer>
+
   </body>
 </html>
