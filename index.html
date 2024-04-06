@@ -18,7 +18,7 @@
     <title>Megamole Nig Limited</title>
   </head>
   <body>
-    <section class="showcase">
+    <section class="showcase" id="home">
       <header>
         <h2 class="logo">Megamole Nig Limited</h2>
         <div class="toggle"></div>
@@ -56,7 +56,7 @@
         </li>
       </ul>
     </section>
-    <section style="width: 100%; background-color: #f2f2f2">
+    <section style="width: 100%; background-color: #f2f2f2" id="about">
       <div class="heading">
         <h1>About Us</h1>
         <p>
@@ -86,7 +86,7 @@
       </div>
     </section>
 
-    <div class="wrapper">
+    <div class="wrapper" id="product">
       <div class="title">
         <h1>Our Products/Services</h1>
         <p>
@@ -147,7 +147,7 @@
       </div>
     </div>
 
-    <div class="testimonials">
+    <div class="testimonials" id="testimonial">
       <div class="inner">
         <h1>Testimonials</h1>
         <div class="border"></div>
@@ -220,7 +220,7 @@
       </div>
     </div>
 
-    <div class="container blue">
+    <div class="container blue" id="partner">
       <h2 class="partner">Our Partners</h2>
       <section class="customer-logos slider">
         <div class="slide"><img src="/images/frutta.jpeg" alt="" /></div>
@@ -245,53 +245,31 @@
       </form>
     </div> -->
 
+    <div class="container red">
+      <h2 class="green">Contact Us</h2>
+      <form id="contactForm" class="blue">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit" id="submitBtn" class="lilac">Send</button>
+      </form>
+      <p id="responseMsg"></p>
+    </div>
+
     <div class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Products/Services</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Our partners</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#product">Products/Services</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+        <li><a href="#partner">Our partners</a></li>
+        <!-- <li><a href="#">Contact Us</a></li> -->
       </ul>
     </div>
-    <script>
-      const menuToggle = document.querySelector(".toggle");
-      const showcase = document.querySelector(".showcase");
-
-      menuToggle.addEventListener("click", () => {
-        menuToggle.classList.toggle("active");
-        showcase.classList.toggle("active");
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".customer-logos").slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 4,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-          ],
-        });
-      });
-    </script>
-
+  
     <footer>
       <div class="row up">
         <div class="col down">
@@ -345,5 +323,6 @@
       <hr />
       <p class="partner-footer">Megamole &copy; 2016 - All Rights Reserved</p>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

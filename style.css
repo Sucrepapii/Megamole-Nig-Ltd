@@ -189,15 +189,15 @@
   .text h3 {
     font-size: 2em;
   }
-  footer{
+  footer {
     bottom: unset;
   }
-  .down{
+  .down {
     flex-basis: 100%;
-  
   }
-  
-  .down:nth-child(2), .down:nth-child(3){
+
+  .down:nth-child(2),
+  .down:nth-child(3) {
     flex-basis: 100%;
   }
 }
@@ -356,7 +356,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     padding: 10px 10px;
     background-color: #fff;
     border-radius: 10px;
@@ -381,7 +381,7 @@ body {
     align-items: center;
     background: linear-gradient(to right, #00093c, #2d0b00);
   }
-  
+
   .red form {
     width: 100%;
     display: flex;
@@ -392,15 +392,15 @@ body {
     backdrop-filter: blur(10px);
     flex-wrap: wrap;
   }
-  
+
   .red form h1 {
     color: #fff;
     font-weight: 500;
     margin-top: 20px;
- 
+
     text-align: center;
   }
-  
+
   .red form input {
     width: 290px;
     height: 40px;
@@ -412,23 +412,23 @@ body {
     background: none;
     border-bottom: 2px solid #fff;
   }
-  
+
   .red form input::placeholder {
     color: #ddd;
   }
-  
+
   .red form #lastName,
   .red form #mobile {
     margin-left: 20px;
   }
-  
+
   .red form h4 {
     color: #fff;
     font-weight: 300;
     width: 600px;
     margin-top: 20px;
   }
-  
+
   .red form textarea {
     background: none;
     border: none;
@@ -450,7 +450,7 @@ body {
     line-height: 1em;
     text-transform: uppercase;
   }
-  
+
   .text h3 {
     font-size: 2em;
     font-weight: 700;
@@ -480,10 +480,10 @@ body {
   align-items: center;
   margin: 75px auto;
   text-align: center;
-  gap: 28px
+  gap: 28px;
 }
 
-.wrapper p{
+.wrapper p {
   padding: 40px;
 }
 
@@ -558,7 +558,7 @@ body {
   margin: 4px auto;
 }
 
-.roww{
+.roww {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -594,7 +594,8 @@ body {
 }
 
 .blue {
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .partner {
@@ -660,98 +661,54 @@ body {
 }
 
 .red {
-
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.red form {
-  min-width: 670px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  flex-wrap: wrap;
-}
-
-.red form h1 {
-  color: #fff;
-  font-weight: 500;
-  margin-top: 20px;
-  width: 500px;
+.green {
   text-align: center;
 }
 
-.red form input {
-  width: 290px;
-  height: 40px;
-  padding-left: 10px;
-  outline: none;
-  border: none;
-  font-size: 15px;
-  margin-bottom: 10px;
-  background: none;
-  border-bottom: 2px solid #fff;
+.blue {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
 }
 
-.red form input::placeholder {
-  color: #ddd;
+label {
+  font-weight: bold;
 }
 
-.red form #lastName,
-.red form #mobile {
-  margin-left: 20px;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-.red form h4 {
+.lilac {
+  padding: 8px 20px;
+  background-color: #4caf50;
   color: #fff;
-  font-weight: 300;
-  /* width: 600px; */
-  margin-top: 20px;
-}
-
-.red form textarea {
-  background: none;
   border: none;
-  border-bottom: 2px solid #fff;
-  color: #fff;
-  font-weight: 200;
-  font-size: 15px;
-  padding: 10px;
-  outline: none;
-  /* min-width: 600px;
-  max-width: 600px;
-  min-height: 80px;
-  max-height: 890px; */
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-textarea::-webkit-scrollbar {
-  width: 1em;
+.lilac:hover {
+  background-color: #3e8e41;
 }
 
-.red form #button {
-  border: none;
-  background: #fff;
-  border-radius: 5px;
+#responseMsg {
+  text-align: center;
   margin-top: 20px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #333;
-  width: 100px;
-  padding: 0;
-  margin-right: 500px;
-  margin-bottom: 30px;
-  transition: 0.3s;
-}
-
-.red form #button:hover {
-  opacity: 0.7;
+  font-weight: bold;
 }
 
 footer {
@@ -765,7 +722,7 @@ footer {
   line-height: 20px;
 }
 
-.up{
+.up {
   width: 85%;
   margin: auto;
   display: flex;
@@ -774,43 +731,44 @@ footer {
   justify-content: space-between;
 }
 
-.down{
+.down {
   flex-basis: 25%;
   padding: 10px;
 }
 
-.down:nth-child(2), .down:nth-child(3){
+.down:nth-child(2),
+.down:nth-child(3) {
   flex-basis: 15%;
 }
 
-.nill{
+.nill {
   width: 80px;
   margin-bottom: 30px;
 }
 
-.down h3{
+.down h3 {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
 }
 
-.email-id{
+.email-id {
   width: fit-content;
-  border-bottom:1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   margin: 20px;
 }
 
-.low .high{
-list-style: none;
-margin-bottom: 12px;
+.low .high {
+  list-style: none;
+  margin-bottom: 12px;
 }
 
-.low .high a{
-text-decoration: none;
-color: #fff;
+.low .high a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.pot{
+.pot {
   padding-bottom: 15px;
   display: flex;
   align-items: center;
@@ -819,12 +777,12 @@ color: #fff;
   margin-bottom: 50px;
 }
 
-.pot .ri-mail-fill{
+.pot .ri-mail-fill {
   font-size: 18px;
   margin-right: 30px;
 }
 
-.pot input{
+.pot input {
   width: 100%;
   background: transparent;
   color: #ccc;
@@ -832,20 +790,19 @@ color: #fff;
   outline: none;
 }
 
-.pot button{
+.pot button {
   background: transparent;
   border: 0;
   outline: none;
   cursor: pointer;
 }
 
-.pot button .ri-arrow-right-fill{
+.pot button .ri-arrow-right-fill {
   font-size: 16px;
   color: #ccc;
 }
 
-
-.social-icons .socialmedia{
+.social-icons .socialmedia {
   width: 40px;
   height: 40px;
   /* border: 70%; */
@@ -857,7 +814,7 @@ color: #fff;
   cursor: pointer;
 }
 
-hr{
+hr {
   width: 90%;
   border: 0;
   border-top: 1px solid #ccc;
@@ -875,7 +832,7 @@ hr{
   overflow: hidden;
 }
 
-.underline span{
+.underline span {
   width: 15px;
   height: 100%;
   background: #fff;
@@ -894,5 +851,3 @@ hr{
     left: 100%;
   }
 }
-
-
