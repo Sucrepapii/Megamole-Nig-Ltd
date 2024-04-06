@@ -301,7 +301,7 @@ body {
   background-color: #3e8e41;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 740px) {
   .heading {
     padding: 0px 20px;
   }
@@ -344,10 +344,123 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+  .about-image img {
+    /* max-width: 100%; */
+    height: 250px;
+    display: block;
+    transition: 0.5s ease;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .roww {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .coll {
+    flex: 100%;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  .red {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+  }
+  
+  .red form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+  }
+  
+  .red form h1 {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+ 
+    text-align: center;
+  }
+  
+  .red form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .red form input::placeholder {
+    color: #ddd;
+  }
+  
+  .red form #lastName,
+  .red form #mobile {
+    margin-left: 20px;
+  }
+  
+  .red form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+  }
+  
+  .red form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 890px;
+  }
+
+  .text h2 {
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  
+  .text h3 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
 }
 
 .title h1 {
-  font-size: 50px;
+  font-size: 30px;
   color: #000;
   text-align: center;
   margin-top: 50px;
@@ -367,6 +480,7 @@ body {
   align-items: center;
   margin: 75px auto;
   text-align: center;
+  gap: 28px
 }
 
 .wrapper p{
@@ -378,7 +492,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 20px;
+
   padding: 20px 10px;
   background-color: #fff;
   border-radius: 10px;
@@ -444,15 +558,15 @@ body {
   margin: 4px auto;
 }
 
-.row {
+.roww{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.col {
+.coll {
   flex: 33.33%;
-  max-width: 33.33%;
+  /* max-width: 33.33%; */
   box-sizing: border-box;
   padding: 15px;
 }
@@ -546,7 +660,7 @@ body {
 }
 
 .red {
-  min-height: 100vh;
+
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -555,7 +669,7 @@ body {
 }
 
 .red form {
-  width: 670px;
+  min-width: 670px;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -598,7 +712,7 @@ body {
 .red form h4 {
   color: #fff;
   font-weight: 300;
-  width: 600px;
+  /* width: 600px; */
   margin-top: 20px;
 }
 
@@ -611,10 +725,10 @@ body {
   font-size: 15px;
   padding: 10px;
   outline: none;
-  min-width: 600px;
+  /* min-width: 600px;
   max-width: 600px;
   min-height: 80px;
-  max-height: 890px;
+  max-height: 890px; */
 }
 
 textarea::-webkit-scrollbar {
