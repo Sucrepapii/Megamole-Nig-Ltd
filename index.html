@@ -50,7 +50,8 @@
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/chris-erhagbe-066858b7/?originalSubdomain=ng" target="_blankl"
+            href="https://www.linkedin.com/in/chris-erhagbe-066858b7/?originalSubdomain=ng"
+            target="_blankl"
             ><img src="/images/linkedin-box-fill.png" alt=""
           /></a>
         </li>
@@ -222,13 +223,13 @@
 
     <div class="container blue" id="partner">
       <h2 class="partner">Our Partners</h2>
-      <section class="customer-logos slider">
-        <div class="slide"><img src="/images/frutta.jpeg" alt="" /></div>
-        <div class="slide"><img src="/images/guinness1.png" alt="" /></div>
-        <div class="slide">
+      <section class="customer-logos ">
+        <div class=""><img src="/images/frutta.jpeg" alt="" /></div>
+        <div class="e"><img src="/images/guinness1.png" alt="" /></div>
+        <div class="">
           <img src="/images/oxford-int-group-logo.jpg" alt="" />
         </div>
-        <div class="slide"><img src="/images/son1.jpeg" alt="" /></div>
+        <div class=""><img src="/images/son1.jpeg" alt="" /></div>
       </section>
     </div>
 
@@ -245,19 +246,20 @@
       </form>
     </div> -->
 
-    <div class="container red">
+    <!-- <div class="container red" id="contact">
       <h2 class="green">Contact Us</h2>
       <form id="contactForm" class="blue">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required /><br /><br />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
         <button type="submit" id="submitBtn" class="lilac">Send</button>
       </form>
       <p id="responseMsg"></p>
-    </div>
+    </div> -->
 
     <div class="menu">
       <ul>
@@ -266,10 +268,10 @@
         <li><a href="#product">Products/Services</a></li>
         <li><a href="#testimonial">Testimonials</a></li>
         <li><a href="#partner">Our partners</a></li>
-        <!-- <li><a href="#">Contact Us</a></li> -->
+        <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
-  
+
     <footer>
       <div class="row up">
         <div class="col down">
@@ -323,6 +325,59 @@
       <hr />
       <p class="partner-footer">Megamole &copy; 2016 - All Rights Reserved</p>
     </footer>
-    <script src="/js/script.js"></script>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+    <!-- <script>
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script> -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let message = document.getElementById("message").value;
+
+          // Simulating sending data to a server
+          setTimeout(function () {
+            document.getElementById(
+              "responseMsg"
+            ).textContent = `Thank you, ${name}! Your message has been sent.`;
+            document.getElementById("contactForm").reset();
+          }, 1000);
+        });
+    </script>
   </body>
 </html>
