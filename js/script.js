@@ -44,4 +44,5 @@ menuToggle.addEventListener("click", () => {
       document.getElementById('contactForm').reset();
     }, 1000);
   });
+
   
