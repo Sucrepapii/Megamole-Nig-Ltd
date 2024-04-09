@@ -29,6 +29,14 @@
   right: 300px;
 }
 
+.readMore1{
+  display: none;
+}
+
+.readMore1.active{
+  display: block;
+}
+
 .showcase header {
   position: absolute;
   top: 0;
